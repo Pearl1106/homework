@@ -15,8 +15,7 @@ class Queue(object):
  
     def __getitem__(self, i):
         return self.queue[i]
- 
-    @property
+
     def is_empty(self):
         return len(self.queue) == 0
  
