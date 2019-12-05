@@ -1,0 +1,23 @@
+class treeNode:
+     def __init__(self, one):
+         self.one = one
+         self.left = None
+         self.right = None
+     def insertLeft(self,one):
+         if self.left ==None:
+             self.left = treeNode(one)
+         else:
+             self.left.insertLeft(one)
+     def insertRight(self,one):
+         if self.right == None:
+             self.right = treeNode(one)
+         else:
+             self.rihgt.insertRight(one)
+
+sampleTree = treeNode(5)
+sampleTree.insertRight(7)
+sampleTree.insertRight(8)
+sampleTree.insertLeft(3)
+sampleTree.insertLeft(2)
+sampleTree.right.insertLeft(6)
+sampleTree.left.insertLeft(4)
