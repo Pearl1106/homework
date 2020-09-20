@@ -1,0 +1,8 @@
+{
+  "message" : "Input Error",
+  "code" : "123.001",
+  "details" : [ {
+    "field" : "studentStatus",
+    "reason" : "Field is required"
+  } ]
+}
